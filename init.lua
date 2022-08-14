@@ -123,7 +123,7 @@ local UpdateAssist
 if isfile("modern_cg/update_as.sist") then
     UpdateAssist = loadstring(readfile("modern_cg/update_as.sist"))()
 else
-    UpdateAssist = loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/raymonable/ModernCG@main/update.lua"))()
+    UpdateAssist = loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/raymonable/ModernCG@latest/update.lua"))()
 end
 if UpdateAssist.CheckForUpdates() then
     -- Update.
