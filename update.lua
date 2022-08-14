@@ -19,7 +19,7 @@ return {
   CheckForUpdates = function()
     if isfile("modern_cg/ver.sion") then
       local CurrentVersion = readfile("modern_cg/ver.sion")
-      return not tostring(CurrentVersion) == ReleaseData["tag_name"]
+      return not (tostring(CurrentVersion) == ReleaseData["tag_name"])
     else
       return true
     end
