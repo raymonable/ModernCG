@@ -8,8 +8,6 @@ ModernCG Update Assist
 local HS = game:GetService('HttpService')
 local TS = game:GetService('TeleportService')
 
-local Player = game.Players.LocalPlayer
-
 local APIURL = "https://api.github.com/repos/raymonable/ModernCG/releases"
 local ReleaseData = HS:JSONDecode(syn.request({
     Url = APIURL,
@@ -43,6 +41,8 @@ return {
     end
     writefile("modern_cg/ver.sion", ReleaseData["tag_name"])
     print('Download finished!')
+    repeat wait() until game:IsLoaded()
+    local Player = game.Players.LocalPlayer
     Player:Kick('ModernCG has been %s. Please rejoin.', (Installing and "installed" or "updated"))
   end
 }
