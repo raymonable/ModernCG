@@ -5,5 +5,5 @@
   "resources/CLOSE.wav" : "modern_cg/resources/close.wav",
   "resources/DECIDE.wav" : "modern_cg/resources/decide.wav",
   "resources/LOADING.wav" : "modern_cg/resources/load.wav",
-  "resources/OPEN.wav" : "modern_cg/resources/open.wav",
+  "resources/OPEN.wav" : "modern_cg/resources/open.wav"
 }
