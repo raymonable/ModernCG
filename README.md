@@ -20,6 +20,8 @@ ModernCG
 ### Note:
 This is fairly unfinished. Some parts of the CoreGui haven't been replaced, or have compatibility issues. Please report any major bugs or missing guis!
 
+Also, if you're on version `1.0.2` or lower, please delete all `modern_cg` files and restart! `1.0.3` has a fixed installer. Thanks! :)
+
 ## How do I install it?
 
 1. In Synapse X, go to `Options` and make sure `Auto-Launch` and `Internal UI` is on.
