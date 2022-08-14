@@ -25,7 +25,7 @@ pcall(function() -- Wrapping it in a pcall so if it can't find what it needs, it
                         OverlayGui.BackgroundColor3 = Color3.fromRGB(9, 12, 17)
                         LoadingAudio = Instance.new('Sound', workspace)
                         LoadingAudio.Looped = true
-                        LoadingAudio.SoundId = getsynasset('modern_cg/resources/load.wav')
+                        LoadingAudio.SoundId = (getsynasset or getcustomasset)('modern_cg/resources/load.wav')
                         LoadingAudio.Playing = true
                         LoadingAudio.Volume = 0.25
                         local PlaceIcon = Instance.new('ImageLabel', OverlayGui)
