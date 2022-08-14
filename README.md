@@ -15,7 +15,7 @@ ModernCG
 
 ## What is this?
 
-**ModernCG** is a semi-replacement for CoreGui, designed for Synapse.
+**ModernCG** is a semi-replacement for CoreGui, designed for Synapse (or Scriptware).
 
 ### Note:
 This is fairly unfinished. Some parts of the CoreGui haven't been replaced, or have compatibility issues. Please report any major bugs or missing guis!
