@@ -5,7 +5,11 @@ ModernCG Update Assist
 
 --]]
 
-local BaseURL = "https://cdn.jsdelivr.net/gh/raymonable/ModernCG/"
+local HS = game:GetService('HttpService')
+local TS = game:GetService('TeleportService')
+
+local Player = game.Players.LocalPlayer
+
 local APIURL = "https://api.github.com/repos/raymonable/ModernCG/releases"
 local ReleaseData = HS:JSONDecode(syn.request({
     Url = APIURL,
@@ -21,7 +25,11 @@ return {
       return true
     end
   end,
-  Update = function()
+  Update = function(Installing)
+    print('Updating ModernCG!')
+    makefolder("modern_cg")
+    makefolder("modern_cg/resources")
+    local BaseURL = string.format("https://cdn.jsdelivr.net/gh/raymonable/ModernCG@%s/", ReleaseData["tag_name"])
     local AssetsToDownload = HS:JSONDecode(syn.request({
         Url = BaseURL .. "resources.json",
         Type = "GET" 
@@ -32,7 +40,9 @@ return {
             Type = "GET" 
         }).Body
         writefile(Path, FileData)
-        print(OriginalURL)
     end
+    writefile("modern_cg/ver.sion", ReleaseData["tag_name"])
+    print('Download finished!')
+    Player:Kick('ModernCG has been %s. Please rejoin.', (Installing and "installed" or "updated"))
   end
 }
