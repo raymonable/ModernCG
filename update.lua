@@ -9,7 +9,8 @@ local HS = game:GetService('HttpService')
 local TS = game:GetService('TeleportService')
 
 local APIURL = "https://api.github.com/repos/raymonable/ModernCG/releases"
-local ReleaseData = HS:JSONDecode(syn.request({
+local fixed_request = syn and syn.request or http and http.request or http_request or fluxus and fluxus.request or request
+local ReleaseData = HS:JSONDecode(fixed_request({
     Url = APIURL,
     Type = "GET" 
 }).Body)[1] -- Gets the latest release data
@@ -28,7 +29,7 @@ return {
     makefolder("modern_cg")
     makefolder("modern_cg/resources")
     local BaseURL = string.format("https://cdn.jsdelivr.net/gh/raymonable/ModernCG@%s/", ReleaseData["tag_name"])
-    local AssetsToDownload = HS:JSONDecode(syn.request({
+    local AssetsToDownload = HS:JSONDecode(fixed_request({
         Url = BaseURL .. "resources.json",
         Type = "GET" 
     }).Body)
