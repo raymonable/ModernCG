@@ -22,10 +22,8 @@ This is fairly unfinished. Some parts of the CoreGui haven't been replaced, or h
 
 ## How do I install it?
 
-### (Do not use these instructions yet. It's still a work in progress, and this message will be removed as soon as the repository's completely setup.)
-
 1. In Synapse X, go to `Options` and make sure `Auto-Launch` and `Internal UI` is on.
-2. Go to [the releases page](https://github.com/raymonable/ModernCG/releases) and download `init.lua`.
+2. Download [init.lua](https://raw.githubusercontent.com/raymonable/ModernCG/main/init.lua) from the repository. Do not use anything from the Releases tab.
 3. Put the downloaded `init.lua` into your `autoexec` Synapse X folder.
 4. Launch a game, and it should download the required resources for **ModernCG**. It may force you to rejoin.
 
