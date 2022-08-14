@@ -37,5 +37,6 @@ This is fairly unfinished. Some parts of the CoreGui haven't been replaced, or h
 - Voice chat settings cannot be modified.
 - The `RBXM` file is not hashed or checked yet (for security reasons).
 - Not all icons and assets have been ported to `synassets`.
+- The viewport playerlist can cause lots of lag on large servers.
 
 ***AND NO, I AM NOT CONFESSING TO OWNING SYNAPSE. TECH, IF YOU SEE THIS, THEN YOU SHOULD KNOW THAT I DON'T OWN IT!!!***
