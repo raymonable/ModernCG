@@ -1,9 +1,9 @@
 {
-  ["modules.lua"] : "modern_cg/mod.ules",
-  ["update.lua"] : "modern_cg/update_as.sist",
-  ["ModernCG.rbxm"] : "modern_cg/mcg.rbxm",
-  ["resources/CLOSE.wav"] : "modern_cg/resources/close.wav",
-  ["resources/DECIDE.wav"] : "modern_cg/resources/decide.wav",
-  ["resources/LOADING.wav"] : "modern_cg/resources/load.wav",
-  ["resources/OPEN.wav"] : "modern_cg/resources/open.wav",
+  "modules.lua" : "modern_cg/mod.ules",
+  "update.lua" : "modern_cg/update_as.sist",
+  "ModernCG.rbxm" : "modern_cg/mcg.rbxm",
+  "resources/CLOSE.wav" : "modern_cg/resources/close.wav",
+  "resources/DECIDE.wav" : "modern_cg/resources/decide.wav",
+  "resources/LOADING.wav" : "modern_cg/resources/load.wav",
+  "resources/OPEN.wav" : "modern_cg/resources/open.wav",
 }
