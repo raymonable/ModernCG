@@ -41,8 +41,6 @@ return {
     end
     writefile("modern_cg/ver.sion", ReleaseData["tag_name"])
     print('Download finished!')
-    repeat wait() until game:IsLoaded()
-    local Player = game.Players.LocalPlayer
-    Player:Kick('ModernCG has been %s. Please rejoin.', (Installing and "installed" or "updated"))
+    game:Shutdown() -- Shutdown so player has to rejoin
   end
 }
