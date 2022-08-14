@@ -1,6 +1,6 @@
 <h1 align="center">
 
-![image](https://user-images.githubusercontent.com/101374892/184504663-f49c4236-346b-43aa-bcaf-5bc6ac07b7a2.png)
+![cog](https://user-images.githubusercontent.com/101374892/184522234-85845699-cd67-4ba7-b07f-d8877b920a8a.png)
 
 ModernCG
 
