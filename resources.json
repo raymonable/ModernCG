@@ -5,5 +5,11 @@
   "resources/CLOSE.wav" : "modern_cg/resources/close.wav",
   "resources/DECIDE.wav" : "modern_cg/resources/decide.wav",
   "resources/LOADING.wav" : "modern_cg/resources/load.wav",
-  "resources/OPEN.wav" : "modern_cg/resources/open.wav"
+  "resources/OPEN.wav" : "modern_cg/resources/open.wav",
+  "resources/close_tex.png" : "modern_cg/resources/close_tex.png",
+  "resources/icon_tex.png" : "modern_cg/resources/icon_tex.png",
+  "resources/rejoin_tex.png" : "modern_cg/resources/rejoin_tex.png",
+  "resources/reset_tex.png" : "modern_cg/resources/reset_tex.png",
+  "resources/shutdown_tex.png" : "modern_cg/resources/shutdown_tex.png",
+  "resources/icon_base.png" : "modern_cg/resources/icon_base.png"
 }
